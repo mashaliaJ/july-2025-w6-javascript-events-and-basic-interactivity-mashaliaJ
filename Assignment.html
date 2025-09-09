@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>About me</h1>
+    <p>A curious learner exploring tech, coding, and problem-solving with creativity.</p>
+    <button id="btn">Click Me</button>
+    <a href="https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg" id="pictures">Get my Pictures</a>
+    <details>
+        <summary>More Info</summary>
+        <input type="radio" id="cv" name="cv" value="cv">
+        <label for="cv">Download CV</label><br>
+        <input type="radio" id="resume" name="resume" value="resume">
+        <label for="resume">Download Resume</label><br><br>
+
+    </details>
+    <h2>Your Comments</h2>
+    <form action="/submit" method="post" id="form">
+        <!-- Name -->
+         <label for="name">Full Name:</label><br>
+         <input type="text" id="name" name="name" required><br><br>
+        
+        <!--Email-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <!--Comment-->
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="5" col="40" required></textarea>
+        <!--Submit-->
+        <button type="submit">Post Comment</button>
+        <p id="errorMessage" style="color: red;"></p>
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
